@@ -64,9 +64,8 @@ $ ./push_swap [Autant de nombres que voulu]
 
 ## Comment l'utiliser ? : 
 
-
+Lors de l'exécution du binaire, il suffit d'écrire a la suite tout les nombres que l'on veut dans la première liste.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/91092610/174799176-a45a4b49-f91e-4a41-8a89-fac3bc0fa187.png">
-  <img src="https://user-images.githubusercontent.com/91092610/174799379-ab9a3744-7a6e-4550-9d3d-5057d72e9c81.png">
+  <img src="https://user-images.githubusercontent.com/91092610/174808314-33cd1c5e-5631-4ede-a53c-666b03af67a3.png">
 </p>
