@@ -29,6 +29,7 @@ Pour trier les nombres qui lui sont donnés, le programme doit respecter certain
 - rrr : Fait rra et rrb en même temps
 
 Le but du programme va donc être d'écrire toute les opérations nécessaires au triage de la première liste, dans le terminal.
+Exemple : 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/91092610/174807646-24e47b49-2b1e-441c-a5c3-a3fdcdaec19d.png">
 </p>
