@@ -1,38 +1,45 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/91092610/174794137-3507bdf8-4c29-49b7-b5bd-9a399e530650.png" />
+  <img src="https://user-images.githubusercontent.com/91092610/174804091-5cfff4f6-f080-4330-97d9-315f4103c6c9.png"/>
 </p>
 <h1 align="center">
-   My_Sokoban
+   Pushswap
 </h1>
 
 ---
 
 ## Motivation : 
 
-Le **My_Sokoban** est un projet de début/milieu d'année à Epitech à réaliser en solo, dont le principe est de recréer le jeu du sokoban dans un terminal à l'aide de la librairie ncurses.
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/91092610/174794448-c62dcbf3-7480-4efa-899a-b7b2e46e1185.png" />
-</p>
+Le **Pushswap** est un projet de début d'année à Epitech à réaliser en solo, dont le principe est de trier une série de nombre en utilisant seulement certaines méthodes et en respectant certaines contraintes.
 
 ---
 
 ## Description :
 
-Le jeu doit être jouable avec les flêches directionnel du clavier et doit reproduire le jeu du sokoban avec quelques différences : 
-- Les cases ou le joueur peut se déplacer doivent être représenté par des espaces
-- Les murs par des "#"
-- Les boîtes par des "X"
-- Les cases ou le joueur doit amener les boîtes par des "O"
-- Le joueur par un "P"
+Pour trier les nombres qui lui sont donnés, le programme doit respecter certaines contraintes de "mouvements" des nombres. Pour faire simple, le programme dispose de 2 listes, au tout début, la deuxieme liste est vide et la première est rempli avec tout les chiffres reçu dans le désordre. Voici les seuls "mouvements" autorisés : 
+- sa : Echange les deux premier éléments de la première liste
+- sb : Echange les deux premier éléments de la deuxième liste
+- sc : Fait sa et sb en même temps
+- pa : Prend le premier élément de la deuxieme liste et le place en première position dans la première liste
+- pb : Prend le premier élément de la première liste et le place en première position dans la deuxieme liste
+- ra : Le premier élément de la première liste devient le dernier de cette même liste
+- rb : Le premier élément de la deuxième liste devient le dernier de cette même liste
+- rr : Fait ra et rb en même temps
+- rra : Le dernier élément de la première liste devient le premier de cette même liste
+- rrb : Le dernier élément de la deuxième liste devient le premier de cette même liste
+- rrr : Fait rra et rrb en même temps
+
+Le but du programme va donc être d'écrire toute les opérations nécessaires au triage de la première liste, dans le terminal.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/91092610/174807646-24e47b49-2b1e-441c-a5c3-a3fdcdaec19d.png">
+</p>
 
 ---
 
 ## Fonctions Autorisées : 
 
-- malloc, free, exit
-- (f)open, (f)close, (f)read, (f)write
-- getline, ioctl, usleep, sigaction, signal
-- stat, lstat, fstat
+- write
+- malloc
+- free
 
 ---
 
@@ -40,26 +47,23 @@ Le jeu doit être jouable avec les flêches directionnel du clavier et doit repr
 
 Ouvrez un terminal et dirigez vous ou vous souhaitez que le projet soit installé, puis exécutez les commandes suivantes : 
 ```bash
-$ git clone git@github.com:DoctypeHonoo/my_sokoban.git
-$ cd my_sokoban
+$ git clone git@github.com:DoctypeHonoo/pushswap.git
+$ cd pushswap
 $ make
 ```
 Le binaire se trouvera alors à la racine du projet, et il vous suffira de le lancer comme ceci : 
 ```bash
-$ ./my_sokoban map
+$ ./push_swap [Autant de nombres que voulu]
 ```
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/91092610/174798124-a53159a7-4fc7-4645-b007-1fbc0318c9ce.png">
+  <img src="https://user-images.githubusercontent.com/91092610/174805173-b0107a64-c9ff-4fe6-8bbe-265cd5956a7a.png">
 </p>
 
 ---
 
 ## Comment l'utiliser ? : 
 
-Pour lancer le **My_Sokoban**, il suffit d'indiquer dans la ligne d'exécution du binaire une map texte contenant :
-- Le même nombre de "X" que de "O"
-- Un seul "P"
-- Aucun autre caractère que des "#" ou des espaces
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/91092610/174799176-a45a4b49-f91e-4a41-8a89-fac3bc0fa187.png">
